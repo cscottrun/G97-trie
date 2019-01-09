@@ -97,4 +97,35 @@ describe("Trie", () => {
       expect(testTrie2.remove("and")).to.eql(an); 
     });
   });
+
+  // SEARCH METHOD
+  describe('Depth First search for words given a prefix', () => {
+    it ('should provide a list of words, depth first', () => {
+      const testTrie3 = new Trie();
+      const a = testTrie2.insert("a");
+      const at = testTrie2.insert("at");
+      const an = testTrie2.insert("an");
+      const and = testTrie2.insert("and");
+      const anna = testTrie2.insert("anna");
+      expect(testTrie3.search('a').to.eql(['a', 'an', 'and', 'anna', 'at']));
+      expect(testTrie3.search('an').to.eql(['an', 'and', 'anna']));
+    })
+  })
+  describe('Breadth First search for words given a prefix', () => {
+    it ('should provide a list of words, depth first', () => {
+      const testTrie3 = new Trie();
+      const a = testTrie2.insert("a");
+      const at = testTrie2.insert("at");
+      const an = testTrie2.insert("an");
+      const and = testTrie2.insert("and");
+      const anna = testTrie2.insert("anna");
+      expect(testTrie3.search('a').to.eql(['a', 'an', 'at', 'and', 'anna']));
+      expect(testTrie3.search('an').to.eql(['an', 'and', 'anna']));
+    })
+  })
+
+
+
+
+
 });

@@ -9,6 +9,7 @@ describe("Node for Trie", () => {
     expect(node).to.eql({ key: "", parent: null, children: [], end: false });
   });
 });
+
 describe("Trie", () => {
   describe("Instantiation of tree", () => {
     it("can be initialized", () => {
@@ -17,6 +18,7 @@ describe("Trie", () => {
       });
     });
   });
+
   describe("Insert method", () => {
     it("should insert first word to Trie", () => {
       let firstWord = testTrie.insert("a");
@@ -77,6 +79,22 @@ describe("Trie", () => {
         }
       });
       expect(testTrie.root.children).to.have.length(2);
+    });
+  });
+
+  // REMOVE METHOD
+  describe("Removal method", () => {
+    it("should remove 'anna' from Trie", () => {
+      let testTrie2 = new Trie();
+      const a = testTrie2.insert("a");
+      const at = testTrie2.insert("at");
+      const an = testTrie2.insert("an");
+      const and = testTrie2.insert("and");
+      const anna = testTrie2.insert("anna");
+      expect(testTrie2.remove("anna")).to.eql(and);
+    });
+    it("should remove 'and' from Trie", () => {
+      expect(testTrie2.remove("and")).to.eql(an);
     });
   });
 });

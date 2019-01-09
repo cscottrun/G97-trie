@@ -15,10 +15,19 @@ class Trie {
     let node = this.root;
     for (let i = 0 ; i < word.length; i++) {
       if (!node.children[word[i]]) {
-        node.children[word[i]] = Node
+        node.children[word[i]] = new Node(word[i]);
+        node.children[word[i]].parent = node;
+      }
+
+      node = node.children[word[i]];
+      if (i == word.length-1) {
+        node.end = true;
       }
     }
-  }
+  };
+  
+
+
 }
 
 module.exports = { Node, Trie };

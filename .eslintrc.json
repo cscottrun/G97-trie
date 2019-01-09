@@ -27,5 +27,8 @@
     "global-require": 0,
     "padded-blocks": 0,
     "arrow-body-style": 0
+  },
+  "parserOptions": {
+    "sourceType": "module"
   }
 }

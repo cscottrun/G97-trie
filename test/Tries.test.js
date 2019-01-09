@@ -85,7 +85,7 @@ describe("Trie", () => {
   // REMOVE METHOD
   describe("Removal method", () => {
     it("should remove 'anna' from Trie", () => {
-      let testTrie2 = new Trie();
+      const testTrie2 = new Trie();
       const a = testTrie2.insert("a");
       const at = testTrie2.insert("at");
       const an = testTrie2.insert("an");
@@ -94,7 +94,7 @@ describe("Trie", () => {
       expect(testTrie2.remove("anna")).to.eql(and);
     });
     it("should remove 'and' from Trie", () => {
-      expect(testTrie2.remove("and")).to.eql(an);
+      expect(testTrie2.remove("and")).to.eql(an); 
     });
   });
 });

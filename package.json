@@ -19,7 +19,9 @@
     "url": "https://github.com/cscottrun/G97-trie/issues"
   },
   "homepage": "https://github.com/cscottrun/G97-trie#readme",
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^1.15.3"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.12.0",

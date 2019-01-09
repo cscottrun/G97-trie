@@ -1,31 +1,31 @@
 {
   "globals": {
-      "ecmaVersion": 6,
-      "esnext": true,
-      "jasmine": false,
-      "spyOn": false,
-      "it": false,
-      "console": false,
-      "describe": false,
-      "expect": false,
-      "before": false,
-      "after": false,
-      "beforeEach": false,
-      "afterEach": false,
-      "waits": false,
-      "waitsFor": false,
-      "runs": false,
-      "$": false,
-      "confirm": false
-    },
-    "env": {
-      "es6": true,
-      "node": true,
-      "amd": true
-    },
-    "rules": {
-      "global-require": 0,
-      "padded-blocks": 0,
-      "arrow-body-style": 0
-    }
+    "ecmaVersion": 6,
+    "esnext": true,
+    "jasmine": false,
+    "spyOn": false,
+    "it": false,
+    "console": false,
+    "describe": false,
+    "expect": false,
+    "before": false,
+    "after": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "waits": false,
+    "waitsFor": false,
+    "runs": false,
+    "$": false,
+    "confirm": false
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "amd": true
+  },
+  "rules": {
+    "global-require": 0,
+    "padded-blocks": 0,
+    "arrow-body-style": 0
   }
+}

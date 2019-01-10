@@ -14,9 +14,9 @@ This is our repository for learning tries to go onto teaching them to our fellow
 ---
 
 <p align="center">
-  <img src="./GeekRai_trie.png">
+  <img src="./GeekRai_trie.png" alt="http://geekrai.blogspot.com/2015/02/trie-data-structure.html">
 </p>
-image from [GeekRai](http://geekrai.blogspot.com/2015/02/trie-data-structure.html)
+
 
 ### Basic Definition
 

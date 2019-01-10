@@ -74,7 +74,9 @@ class Trie {
   	}
   };
 
-
+  depthFirstSearch(prefix) {
+    
+  }
 
 };
 

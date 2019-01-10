@@ -63,11 +63,7 @@ class Trie {
   	if (child) {
   		let remainder = word.substring(1);
   		if (remainder) {
-  			if (Object.keys(child.children).length === 1) {
-  				delete node.children[letter];
-  			} else {
   				this._removeNode(child, remainder);
-  			}
   		} else {
   			if (Object.keys(child.children).length === 0) {
   				delete node.children[letter];

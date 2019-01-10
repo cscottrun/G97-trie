@@ -56,6 +56,7 @@ describe("Remove function", () => {
     myTrie.insert('a');
     myTrie.insert('an');
     myTrie.insert('and');
+    myTrie.insert('ann');
     myTrie.insert('anna');
 
     expect(myTrie.root.children.a.children.n.children.n.children).to.eql({ a: { key: 'a', children: {}, end: true } });
@@ -63,6 +64,7 @@ describe("Remove function", () => {
 
     myTrie.remove('anna');
     expect(myTrie.contains('anna')).to.eql(false);
+    expect(myTrie.contains('ann')).to.eql(true);
     expect(myTrie.contains('and')).to.eql(true);
 
 

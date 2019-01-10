@@ -35,39 +35,36 @@ class Trie {
   }
 
   remove(word) {
-    if (!this.root) {
-      return;
-    }
+    if (!this.root) return;
     if (this.contains(word)) {
       this._removeNode(this.root, word);
     }
   }
 
   _removeNode(node, word) {
-  	if (!node || !word) {
-  		return;
-  	}
-  	let letter = word[0];
-  	let child = node.children[letter];
-  	if (child) {
-  		let remainder = word.substring(1);
-  		if (remainder) {
-  				this._removeNode(child, remainder);
-  		} else {
-  			if (Object.keys(child.children).length === 0) {
-  				delete node.children[letter];
-  			} else {
-  				child.end = false;
-  			}
-  		}
-  	}
-  };
-
-  depthFirstSearch(prefix) {
-    
+    if (!node || !word) {
+      return;
+    }
+    let letter = word[0];
+    let child = node.children[letter];
+    if (child) {
+      let remainder = word.substring(1);
+      if (remainder) {
+        this._removeNode(child, remainder);
+      } else {
+        if (Object.keys(child.children).length === 0) {
+          delete node.children[letter];
+        } else {
+          child.end = false;
+        }
+      }
+    }
   }
 
-};
-
+  depthFirstSearch(prefix) {}
+  breadthFirstSearch(prefix) {
+    
+  }
+}
 
 module.exports = { Node, Trie };

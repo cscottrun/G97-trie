@@ -85,7 +85,8 @@ describe("Search for words given a prefix", () => {
   myTrie.insert("at");
   myTrie.insert("and");
   myTrie.insert("anna");
-  it("return array or words in depth first order", () => {
+  
+  it("should return array or words in depth first order", () => {
     expect(myTrie.depthFirstSearch("a")).to.eql([
       "a",
       "an",
@@ -95,7 +96,7 @@ describe("Search for words given a prefix", () => {
     ]);
   });
 
-  it("return array or words in breadth first order", () => {
+  it("should return array or words in breadth first order", () => {
     expect(myTrie.breadthFirstSearch("a")).to.eql([ "a", "an", "at", "and", "anna"]);
 
     let myTrie = new Trie();

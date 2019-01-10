@@ -11,11 +11,11 @@ This is our repository for learning tries to go onto teaching them to our fellow
 > Happy Coding! 
 ---
 <p align="center">
-  <img src="./Trie_example.svg">
+  <img src="./GeekRai_trie.png">
 </p>
 
 ### Basic Definition
-A trie is a tree that stores sequential data (e.g. words or phone numbers). Each item in the tree is an edge of the tree with some nodes flagged as being potential ends of sequences. In this repository, our examples and tests will cover word storage for better understanding.
+A trie is a tree that stores sequential data (e.g. words or phone numbers). Each item in the tree is a node of the tree with some nodes flagged as being potential ends of sequences. In this repository, our examples and tests will cover word storage for better understanding.
 
 
 ### Methods Covered
@@ -33,3 +33,5 @@ The methods that will be covered in this repository are:
 #### Helpful Resources 
 * [*Tries - javascript simple implementation* by Jonathan V.](https://medium.com/@alexanderv/tries-javascript-simple-implementation-e2a4e54e4330)
 * [*Trying to Understand Tries*](https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014) by Vaidehi Joshi
+* [JS Algorithms](https://github.com/duereg/js-algorithms) by "duered" on Github
+

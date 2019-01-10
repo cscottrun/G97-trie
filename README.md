@@ -1,5 +1,5 @@
 # Tries
-## by Grace Hartzell and Carrie Scott
+#### by Grace Hartzell and Carrie Scott
 
 
 This is our repository for learning tries to go onto teaching them to our fellow classmates. Test your understanding by...

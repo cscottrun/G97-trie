@@ -82,9 +82,5 @@ class Trie {
 
 };
 
-let myTrie = new Trie;
-myTrie.insert('a');
-myTrie.insert('and');
 
-console.log(myTrie.root.children.a)
 module.exports = { Node, Trie };

@@ -4,7 +4,7 @@
 
 This is our repository for learning tries to go onto teaching them to our fellow classmates. Test your understanding by...
 
-- Fork and clone this repository
+- Fork and clone this repository, then run `npm install`
 - Input answers into `trie.js`
 - Run `npm test` to check your work!
 - **Only when you've completed everything or if you're desperately stuck:** Check out the `solutions` branch to see our implementation of this lovely data structure.

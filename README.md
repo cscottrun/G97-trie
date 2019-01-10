@@ -10,7 +10,9 @@ This is our repository for learning tries to go onto teaching them to our fellow
 
 > Happy Coding! 
 ---
-<img src="./Trie_example.svg">
+<p align="center">
+  <img src="./Trie_example.svg">
+</p>
 
 ### Basic Definition
 A trie is a tree that stores sequential data (e.g. words or phone numbers). Each item in the tree is an edge of the tree with some nodes flagged as being potential ends of sequences. In this repository, our examples and tests will cover word storage for better understanding.

@@ -44,20 +44,30 @@ class Trie {
   }
 
   _removeNode(node, word) {
-    if (!node || !word) return;
+  	if (!node || !word) {
+  		return;
+  	}
+  	let letter = word[0];
+  	let child = node.children[letter];
+  	if (child) {
+  		let remainder = word.substring(1);
+  		if (remainder) {
+  				this._removeNode(child, remainder);
+  		} else {
+  			if (Object.keys(child.children).length === 0) {
+  				delete node.children[letter];
+  			} else {
+  				child.end = false;
+  			}
+  		}
+  	}
+  };
 
-    let letter = word[0];
-    let child = node.children[letter];
-    if (child) {
-      let remainder = word.substring(1);
-      if (remainder) this._removeNode(child, remainder);
-      else {
-        if (Object.keys(child.children).length === 0) {
-          delete node.children[letter];
-        } else child.end = false;
-      }
-    }
+  depthFirstSearch(prefix) {
+    
   }
-}
+
+};
+
 
 module.exports = { Node, Trie };

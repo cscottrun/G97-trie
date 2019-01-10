@@ -36,6 +36,20 @@ describe("Word inserted to Trie", () => {
 
 });
 
+describe("Contains function", () => {
+  it("should return boolean for if work exists in trie", () => {
+    let myTrie = new Trie;
+    myTrie.insert('a');
+    myTrie.insert('an');
+    myTrie.insert('and');
+    myTrie.insert('anna');
+
+    expect(myTrie.root.children.a.children.n.children.n.children).to.eql({ a: { key: 'a', children: {}, end: true } });
+    expect(myTrie.contains('anna')).to.eql(true);
+    expect(myTrie.contains('bob')).to.eql(false);
+  });
+});
+
 describe("Remove function", () => {
   it("should remove a word from a trie", () => {
     let myTrie = new Trie;
@@ -45,9 +59,13 @@ describe("Remove function", () => {
     myTrie.insert('anna');
 
     expect(myTrie.root.children.a.children.n.children.n.children).to.eql({ a: { key: 'a', children: {}, end: true } });
+    expect(myTrie.contains('anna')).to.eql(true);
 
     myTrie.remove('anna');
-    expect(myTrie.root.children.a.children.n.children).to.eql({});
+    expect(myTrie.contains('anna')).to.eql(false);
+    expect(myTrie.contains('and')).to.eql(true);
+
+
 
   });
 });

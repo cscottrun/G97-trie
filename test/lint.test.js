@@ -9,4 +9,4 @@ const paths = [
 const options = {};
 
 // Run the tests
-lint(paths, options);
+// lint(paths, options);

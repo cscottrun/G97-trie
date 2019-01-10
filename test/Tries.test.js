@@ -59,6 +59,36 @@ describe("Contains function", () => {
 
 describe("Remove function", () => {
   it("should remove a word from a trie", () => {
+    let myTrie = new Trie;
+    myTrie.insert('a');
+    myTrie.insert('an');
+    myTrie.insert('and');
+    myTrie.insert('ann');
+    myTrie.insert('anna');
+
+    expect(myTrie.root.children.a.children.n.children.n.children).to.eql({ a: { key: 'a', children: {}, end: true } });
+    expect(myTrie.contains('anna')).to.eql(true);
+
+    myTrie.remove('anna');
+    expect(myTrie.contains('anna')).to.eql(false);
+    expect(myTrie.contains('ann')).to.eql(true);
+    expect(myTrie.contains('and')).to.eql(true);
+  });
+});
+
+describe("Search for words given a prefix", () => {
+    let myTrie = new Trie;
+    myTrie.insert('an');
+    myTrie.insert('a');
+    myTrie.insert('at');
+    myTrie.insert('and');
+    myTrie.insert('anna');
+  it("return array or words in depth first order", () => {
+    expect(myTrie.depthFirstSearch('a')).to.eql(['a', 'an', 'and', 'anna', 'at'])
+  });
+
+  it("return array or words in breadth first order", () => {
+    expect(myTrie.breadthFirstSearch('a')).to.eql(['a', 'an', 'at', 'and', 'anna'])
     let myTrie = new Trie();
     myTrie.insert("a");
     myTrie.insert("an");

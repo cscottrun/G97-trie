@@ -16,7 +16,7 @@ This is our repository for learning tries to go onto teaching them to our fellow
 <p align="center">
   <img src="./GeekRai_trie.png">
 </p>
-  <sub>[GeekRai](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjrv_q63-PfAhUS_1QKHVgxBCYQjRx6BAgBEAU&url=http%3A%2F%2Fgeekrai.blogspot.com%2F2015%2F02%2Ftrie-data-structure.html&psig=AOvVaw3wM19BiRZkZAxB2HPVEtAW&ust=1547227116950621)</sub>
+image from [GeekRai](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjrv_q63-PfAhUS_1QKHVgxBCYQjRx6BAgBEAU&url=http%3A%2F%2Fgeekrai.blogspot.com%2F2015%2F02%2Ftrie-data-structure.html&psig=AOvVaw3wM19BiRZkZAxB2HPVEtAW&ust=1547227116950621)
 
 ### Basic Definition
 
